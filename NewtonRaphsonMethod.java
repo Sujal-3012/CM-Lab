@@ -20,7 +20,7 @@ public static void main(String[] args) {
     System.out.println("upto which approximation : ");
     float appoximation = in.nextInt();
    
-    //first pass ->
+    //first pass :
     float ans = approx - (fun_value(a , b, c , approx) / derivative_value(coeffX , constant ,approx));
     for (int i = 0 ; i <= appoximation ; i++ ){
          ans = ans - (fun_value(a, b , c ,ans) / derivative_value(coeffX , constant ,ans));
